@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>目之所及</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title: 利用Git和Hexo搭建博客date: 2017-03-13 10:29:59tags:技术
+安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="目之所及">
+<meta property="og:url" content="http://yoursite.com/2017/03/13/hexo/index.html">
+<meta property="og:site_name" content="目之所及">
+<meta property="og:description" content="title: 利用Git和Hexo搭建博客date: 2017-03-13 10:29:59tags:技术
+安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要">
+<meta property="og:updated_time" content="2017-03-13T07:05:35.494Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="目之所及">
+<meta name="twitter:description" content="title: 利用Git和Hexo搭建博客date: 2017-03-13 10:29:59tags:技术
+安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要">
+  
+    <link rel="alternate" href="/atom.xml" title="目之所及" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">目之所及</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/13/hexo/" class="article-date">
+  <time datetime="2017-03-13T07:05:35.550Z" itemprop="datePublished">2017-03-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 利用Git和Hexo搭建博客<br>date: 2017-03-13 10:29:59<br>tags:技术</p>
+<h1 id="安装及新建-hexo"><a href="#安装及新建-hexo" class="headerlink" title="安装及新建 hexo"></a>安装及新建 hexo</h1><p>官方推荐安装方法：<br>    curl -sL <a href="https://deb.nodesource.com/setup_6.x" target="_blank" rel="external">https://deb.nodesource.com/setup_6.x</a> | sudo -E bash -<br>    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要先安装nodejs<br>    sudo npm install hexo-cli -g  //安装hexo<br>    hexo init “listname”  //新建博客目录<br>    cd listname  //进入博客工作目录<br>    npm install //安装npm<br>    hexo server //开启本地hexo服务，预览当前博客<br><a id="more"></a><br>注：<br>    _config.yml是配置文件，<br>例：<br>    title: 目之所及        //标题<br>    subtitle: 技术学习    //副标题<br>    description:<br>    author: kaven        //作者<br>    language: zh-CN<br>public是hexo生成的静态站点文件夹，<br>scaffolds是模板文件夹，<br>source是存在用户资源的文件夹，<br>themes是主题文件夹。</p>
+<pre><code>hexo new &quot;文章标题&quot;    //新建文章，生成位置：sources/_posts 编辑该文件创作博客
+</code></pre><h2 id="注册安装-github"><a href="#注册安装-github" class="headerlink" title="注册安装 github"></a>注册安装 github</h2><pre><code>makdir ~/hello-world    //创建一个项目hello-world
+cd ~/hello-world    //打开这个项目
+git init        //初始化，建立本地仓库 
+git commit -m &apos;first commit&apos;     //提交更新，并注释信息“first commit”
+git remote add origin git@github.com:defnngj/hello-world.git     //连接远程github仓库项目
+git push -u origin master    //将本地项目更新到github项目上去 -u为首次更新 或者（+master）为添加更新
+</code></pre><p>注：<br>    Git有一个工具被称为git config，它允许你获得和设置配置变量；这些变量可以控制Git的外观和操作的各个方面。这些变量可以被存储在三个不同的位置：<br>    1 /etc/gitconfig 文件：包含了适用于系统所有用户和所有库的值。如果你传递参数选项’–system’ 给 git config，它将明确的读和写这个文件。<br>    2 ~/.gitconfig 文件 ：具体到你的用户。你可以通过传递–global 选项使Git 读或写这个特定的文件。<br>    3 位于git目录的config文件 (也就是 .git/config) ：无论你当前在用的库是什么，特定指向该单一的库。每个级别重写前一个级别的值。因此，在.git/config中的值覆盖了在/etc/gitconfig中的同一个值。<br>配置相关信息：<br>    1 当你安装Git后首先要做的事情是设置你的用户名称和e-mail地址。这是非常重要的，因为每次Git提交都会使用该信息。它被永远的嵌入到了你的提交中：<br>    git config –global user.name “John Doe”<br>    git config –global user.email johndoe@example.com<br>     2 检查你的设置(Checking Your Settings)<br>　　    如果你想检查你的设置，你可以使用 git config –list 命令来列出Git可以在该处找到的所有的设置:<br>    git config –list<br>    你也可以查看Git认为的一个特定的关键字目前的值，使用如下命令 git config {key}:<br>    git config user.name<br>     3 获取帮助(Getting help)<br>    如果当你在使用Git时需要帮助，有三种方法可以获得任何git命令的手册页(manpage)帮助信息:<br>    git help <verb><br>    git <verb> –help<br>    man git-<verb><br>例：<br>    git help config        //获取帮助</verb></verb></verb></p>
+<h3 id="设置ssh连接"><a href="#设置ssh连接" class="headerlink" title="设置ssh连接"></a>设置ssh连接</h3><pre><code>git config --global user.name &quot;yourname&quot; //设置git用户名
+git config --global user.email“your@email.com&quot; //设置git邮箱
+ls -al ~/.ssh        //查看.ssh目录
+rm known_hosts
+            // 删除.ssh文件夹（直接搜索该文件夹）下的known_hosts
+ssh-keygen -t rsa -C &quot;your@email.com&quot;  //填写设置的邮箱地址
+</code></pre><p>系统会自动在.ssh目录下生成两个文件，id_rsa和id_rsa.pub，用编辑器打开id_rsa.pub<br>将全部的内容复制<br>打开<a href="https://github.com/，登陆你的账户，设置，ssh设置" target="_blank" rel="external">https://github.com/，登陆你的账户，设置，ssh设置</a><br>将复制的key粘贴进去<br>点击add ssh key<br>    ssh -T git@github.com  /测试连接是否成功<br>若未成功<br>    eval “$(ssh-agent -s)”<br>    ssh-add</p>
+<h4 id="部署-hexo"><a href="#部署-hexo" class="headerlink" title="部署 hexo"></a>部署 hexo</h4><p>npm install hexo-deployer-git –save  //装插件<br>修改_config.yml中的deploy参数，添加<br>branch： master；<br>repository: git@github.com:nelifew/nelifew.github.io.git<br>hexo generate -deploy(可以简化为hexo g -d) 生成推送到github的master分支<br>此时访问your-user-name.github.io即可查看生成的站点内容</p>
+<p>依次执行<br>git add .<br>git commit -m “…”<br>git push origin<br>hexo g -d  //发布</p>
+<h5 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h5><p>在域名管理中添加 </p>
+<p>A   www     192.30.252.153</p>
+<p>A   @         192.30.252.154<br>在git项目根目录新建CNAME文件<br>www.muzhisuoji.com</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/03/13/hexo/" data-id="cj07rm1640001vej7i9eyrnlj" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/13/hexo/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/13/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Kaven<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
