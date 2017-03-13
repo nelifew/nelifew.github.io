@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>newthemes | 目之所及</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="date: 2017-03-13 17:38:21tags:
+如何使用 Jacman 主题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="newthemes">
+<meta property="og:url" content="http://yoursite.com/2017/03/13/newthemes/index.html">
+<meta property="og:site_name" content="目之所及">
+<meta property="og:description" content="date: 2017-03-13 17:38:21tags:
+如何使用 Jacman 主题">
+<meta property="og:updated_time" content="2017-03-13T09:53:11.468Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="newthemes">
+<meta name="twitter:description" content="date: 2017-03-13 17:38:21tags:
+如何使用 Jacman 主题">
+  
+    <link rel="alternate" href="/atom.xml" title="目之所及" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">目之所及</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-newthemes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/13/newthemes/" class="article-date">
+  <time datetime="2017-03-13T09:53:11.516Z" itemprop="datePublished">2017-03-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      newthemes
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>date: 2017-03-13 17:38:21<br>tags:</p>
+<p>如何使用 Jacman 主题<br><a id="more"></a><br>主题介绍</p>
+<p>Jacman 是一款扁平化，有着响应式设计的 Hexo 主题。本站正式使用了 Jacman 主题。Jacman 基于 Pacman 主题修改而来，目前已有很多特性与原主题不同。你可以前往 本站 和 Demo 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 issue。</p>
+<p>距离当初我把 Jacman 开源至今已有半年零一周了，在这半年里也一直保持着对 Jacman 的更新。看到很多人用这款主题，fork&amp;star 数也越来越好看，我也更有动力继续完善 Jacman。Jacman 自然还有很多改进空间，首先是文档问题，有许多人通过博客、微博、QQ 询问我有关主题的问题，我也意识到之前写的帮助手册可读性太差。正好趁着这次 Jacman 大更新，写篇更详尽、readable 的手册。<br>安装指南<br>安装</p>
+<p>在博客根目录下执行如下命令。</p>
+<p>$ git clone <a href="https://github.com/wuchong/jacman.git" target="_blank" rel="external">https://github.com/wuchong/jacman.git</a> themes/jacman</p>
+<p>Jacman 需要安装 Hexo 2.7 及以上版本，请先升级您的 Hexo 程序，再启用此主题。<br>启用</p>
+<p>修改你的博客根目录下的_config.yml配置文件中的theme属性，将其设置为jacman。同时建议设置stylus属性中的compress值为true，会自动压缩 CSS 文件，hexo默认配置中不包含这一项，建议开启。如下。</p>
+<p>theme: jacman<br>stylus:<br>  compress: true</p>
+<p>更新</p>
+<p>cd themes/jacman<br>git pull origin master</p>
+<p>请先备份您主题目录下的 _config.yml 文件后再升级。<br>配置指南</p>
+<p>Jacman 主题提供了丰富的配置属性，可以实现您对主题的自定义。配置文件_config.yml位于主题根目录下。本次更新对配置文件进行了较大调整，如您之前就使用了 Jacman，也需要您根据以下指南进行相应的修改。</p>
+<h5 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h5><p>menu:<br>  主页: /<br>  归档: /archives<br>  关于: /about</p>
+<h4 id="控件"><a href="#控件" class="headerlink" title="控件"></a>控件</h4><p>widgets: </p>
+<ul>
+<li>category</li>
+<li>tag</li>
+<li>links</li>
+<li>rss</li>
+</ul>
+<h4 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h4><p>rss: /atom.xml </p>
+<h4 id="图片相关"><a href="#图片相关" class="headerlink" title="图片相关"></a>图片相关</h4><p>imglogo:<br>  enable: true               ## 是否显示网站 logo<br>  src: img/logo.png<br>favicon: img/favicon.ico     ## 网站图标<br>apple_icon: img/jacman.jpg   ## 苹果设备上的图标，背景不要透明<br>author_img: img/author.jpg   ## 网站底部的博主头像<br>banner_img: img/banner.jpg   ## 博客顶部的图片</p>
+<h3 id="主题颜色"><a href="#主题颜色" class="headerlink" title="主题颜色"></a>主题颜色</h3><p>theme_color:<br>    theme: ‘#2ca6cb’    ##默认主题颜色为蓝色</p>
+<p>close_aside: false      ##是否在文章页面自动关闭侧边栏</p>
+<h4 id="首页相关"><a href="#首页相关" class="headerlink" title="首页相关"></a>首页相关</h4><p>index:<br>  expand: true              ## 首页文章是否展开。默认为展开式，显示 Read More。<br>  excerpt_link: Read More    </p>
+<h4 id="作者信息"><a href="#作者信息" class="headerlink" title="作者信息"></a>作者信息</h4><p>author:<br>  intro_line1:  “Hello ,I’m Larry Page in Google.”    ## 网站底部的个人介绍<br>  intro_line2:  “This is my blog,believe it or not.”<br>  weibo_verifier:  ## 微博秀的验证码<br>  tsina:           ## 用于微博秀和微博分享<br>  weibo:           ## 用于显示网站底部社交按钮，下同<br>  douban:<br>  zhihu:<br>  email:<br>  twitter:<br>  github:<br>  facebook:<br>  linkedin:<br>  google_plus:<br>  stackoverflow:  </p>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p>toc:<br>  article: true   ## 是否在文章中显示目录<br>  aside: true     ## 是否在侧边栏显示目录</p>
+<h4 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h4><p>links:<br>  码农圈: <a href="https://coderq.com,一个面向程序员交流分享的新一代社区" target="_blank" rel="external">https://coderq.com,一个面向程序员交流分享的新一代社区</a><br>  Jark’s Blog: <a href="http://wuchong.me" target="_blank" rel="external">http://wuchong.me</a></p>
+<h4 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h4><p>duoshuo_shortname:<br>disqus_shortname:  </p>
+<h4 id="分享按钮"><a href="#分享按钮" class="headerlink" title="分享按钮"></a>分享按钮</h4><p>jiathis:<br>  enable: false   ## 默认使用主题内建分享<br>  id:<br>  tsina: </p>
+<h4 id="网站统计"><a href="#网站统计" class="headerlink" title="网站统计"></a>网站统计</h4><p>google_analytics:<br>  enable: false<br>  id:            ## google analytics ID.<br>  site:          ## 网站地址.<br>baidu_tongji:<br>  enable: false<br>  sitecode:      ## 百度统计站点特征码<br>cnzz_tongji:<br>  enable: false<br>  siteid:        ## CNZZ统计站点ID</p>
+<h4 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h4><p>ShowCustomFont: true<br>fancybox: true<br>totop: true           </p>
+<h4 id="自定义搜索"><a href="#自定义搜索" class="headerlink" title="自定义搜索"></a>自定义搜索</h4><p>google_cse:<br>  enable: false<br>  cx:<br>baidu_search:<br>  enable: false<br>  id:<br>  site: <a href="http://zhannei.baidu.com/cse/search" target="_blank" rel="external">http://zhannei.baidu.com/cse/search</a><br>tinysou_search:     ## <a href="http://tinysou.com/" target="_blank" rel="external">http://tinysou.com/</a><br>  enable: false<br>  id: “4ac092ad8d749fdc6293”</p>
+<p>属性功能</p>
+<pre><code>菜单 menu
+默认没有启用 /tags 和 /categories页面，如果需要启用请在博客目录下的source文件夹中分别建立tags 和 categories文件夹每个文件夹中分别包含一个index.md文件。内容为：
+</code></pre><p>layout: tags (或categories)</p>
+<h2 id="title-tags-或categories"><a href="#title-tags-或categories" class="headerlink" title="title: tags (或categories)"></a>title: tags (或categories)</h2><pre><code>  因为主题中已经内置了这两个页面的模板，所以他们会被正确的解析出来。
+
+控件 widgets
+提供了7种小工具。包括标签、标签云、分类、归档、RSS、友情链接、微博秀。
+
+友情链接：友情链接的网址添加可以在links属性下添加。
+
+微博秀：需要注意的是，如果要启用微博秀，您必须填上author属性下tsina和weibo_verifier的值，前者是您微博ID，后者是您微博秀的验证码，访问 http://app.weibo.com/tool/weiboshow 在如下图位置，可以获得您的 verifier，如：我的是b3593ceb。
+
+如果要关闭侧边栏，将close_aside置为true，就会在博文页面自动关闭侧边栏。
+
+图片相关 Image
+本主题可以设置网站相关图片，例如网站图标（favicon）、网站logo（imglogo）、作者头像（author_img）。建议启用网站logo，格式建议为.svg或.png格式。同时建议提供配套的 favicon 以及在苹果设备上的图标apple_icon（背景不要透明）。
+
+首页显示模式 Index
+目前首页的显示模式支持两种，一种是原先的卡片式（前往 Demo 预览），另一种是类似官方主题的文章展开式（本站即采用的这种）。两者各有优劣，前者首页加载速度更快，后者文章内容更能吸引读者。主题默认采用后一种展开式，如需开启第一种卡片式，请设置index属性下的expand: false。
+
+卡片式的文章摘要是截取文章内容的前140个字，也可以自己总结description并将其放在开头的front-matter中。展开式的文章摘要就是使用&lt;!-- more --&gt;截取了。
+
+作者信息 author
+作者信息，建议尽量填写完整。其中tsina是你的新浪微博ID，不同于用户名或微博主页地址。启用这个属性后，其他用户在微博上分享你文章的同时会自动@你。同时它和weibo_verifier一起作用生成微博秀。intro_line1和intro_line2是网站底部的个人介绍。weibo、twitter、facebook等是用来显示网站右下角的社交按钮的，如下图所示。
+
+目录 toc
+是否启用在文章中或侧边栏中的目录功能。二者可以都为true或都为false。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的front-matter中加上一行toc: false。如果希望在某一篇文章中关闭目录自动编号功能你可以在文章文件开头的front-matter中加上一行list_number: false。另外 hexo 2.5.2 开始支持中文目录，想获得更好的体验请升级你的 Hexo 版本。
+
+评论 comments
+填写duoshuo_shortname多说的用户名，启用多说评论系统。在大陆地区更好用的评论系统。
+
+填写disqus_shortnamedisqus 的用户名，启用 disqus 评论系统。国际上更广泛使用的评论系统。设置博客根目录下的_config.yml文件中的disqus_shortname同样也能开启该功能。
+
+加网分享 jiathis
+加网分享系统。默认关闭，因为主题已经内置了原生的分享功能。
+
+网站统计 Analytics
+google_analytics：Google Analytics追踪代码。请注意：Google Analytics已经升级到了Universal Analytics。请先前往后台升级你的Google Analytics版本后再启用追踪代码，更多信息请点击这里了解。
+
+baidu_tongji：百度统计功能。需要填写站点特征码sitecode，在官网注册并配置站点后，获取特征码。特征码可以在「网站中心」-&gt; 「代码获取」中查看，如下图所示的e6d1f421bbc9962127a50488f9ed37d1，注意去掉前面的3F。
+
+cnzz_tongji：站长统计功能。需要填写站点IDsiteid，同理在站长官网注册并配置站点后获得。
+
+数学公式 mathjax
+主题支持写 LaTex 数学公式。只需要在文章文件开头的front-matter中，加上一行mathjax: true，即可在文中写 LaTex 公式。
+
+图片浏览 fancybox
+默认关闭，如果你使用 Hexo 经常发表 Gallery 类型的文章，那么请设置为true。
+
+返回顶部 totop
+右下角返回顶部按钮，默认开启。
+
+自定义字体 ShowCustomFont
+是否启用自定义字体，默认开启，主要用于显示网站底部的字体。如果你有一定前端基础可以修改 font.styl 替换为你喜欢的字体。
+
+自定义搜索 Search
+baidu_search：如果开启百度站内搜索需要登录 百度站内搜索，配置好你的站点，并开启站内搜索获取搜索ID，另外site属性可以填默认值，也可以填自己做了CNAME的二级域名，更详细的可以阅读这篇博客了解。
+
+google_cse：如果开启谷歌自定义搜索需要先登录 Google CSE，配置好你的站点，并获得此自定义搜索的ID。此外你需要在博客目录下的source文件夹中建立search文件夹并包含一个index.md文件。内容为：
+
+layout: search
+title: search
+---
+
+tiny_search: 如果要开启微搜索，需要先注册一个帐号，配置一个Engine，将Engine的Key填入配置文件中的id即可。
+
+主题颜色更改 Theme Color
+</code></pre><p>目前官方还未支持十六进制颜色与String值的转换，所以需要手动添加依赖包，该问题估计不久后会解决。</p>
+<h2 id="在博客的目录下输入下面指令"><a href="#在博客的目录下输入下面指令" class="headerlink" title="在博客的目录下输入下面指令"></a>在博客的目录下输入下面指令</h2><p>cd node_modules/hexo-renderer-stylus<br>sudo npm install stylus@0.49.2  #根据系统文件的权限不同，有的不需要加sudo</p>
+<p>然后更改在主题目录下的_config.yml的 theme_color 下 theme 值。</p>
+<h3 id="Theme-Color"><a href="#Theme-Color" class="headerlink" title="Theme Color"></a>Theme Color</h3><p>theme_color:<br>    theme: ‘#2ca6cb’    ##the defaut theme color is blue</p>
+<p>常见问题</p>
+<pre><code>Q：图片默认都是居左的，我怎么设置能让图片居中呢？
+
+    使用 &lt;img src=&quot;&quot; style=&quot;display:block;margin:auto&quot;/&gt;的HTML标签。
+
+Q：如何建立一篇图片类文章（Gallery Post）？
+
+    使用hexo new photo &quot;your titile&quot;建立图片类文章，或者直接新建一个 Markdown 文件，将其front-matter修改为如下，即可看到主题为图片类文章提供的样式，Demo。
+
+    ---
+    layout: photo
+    title: Gallery Post
+    photos:
+    - http://i.minus.com/ibobbTlfxZgITW.jpg
+    - http://i.minus.com/iedpg90Y0exFS.jpg
+    ---
+
+Q：我在配置文件中给某一项设置了值，但为什么总是看不到效果啊？
+
+    _config.yml文件中的每个属性值前面必须留一个空格，建议在 Sublime/Notepad++ 中开启显示所有空格模式。另每篇文章的 front-matter 也要注意这个问题。
+
+Q：如何建立自我介绍页面（About 页面）？
+
+    首先在主目录找到_config.yml，找到url添加about_dir: about到这个板块。然后在/source里面建立about文件夹。在about文件夹里建立index.md。编辑index.md就和发布其他的文章一样，格式都一样。
+
+Q：怎么提意见和建议？
+
+    主题还在不断完善中，欢迎 open issue 来提建议，参与讨论。
+
+Q：楼主我不喜欢你的配色，怎么换主题的颜色呢？
+
+    包括颜色在内的很多变量都在jacman/source/css/_base/variable.styl文件中，可以修改成你喜欢的。
+
+Q：英语更能突显我的逼格，怎么换成英语？
+
+    配置你的博客根目录下的_config.yml，去掉language: zh-CN。
+
+Q：为什么我修改了配置文件/发表了博文，解析出来的却是乱码呢？
+
+    请将你的配置文件/markdown文件保存成 UTF-8 格式。
+
+Q：为什么开启了微博秀后，显示是空白的，没有内容展示？
+
+    每次修改参数都会这样，需要多刷新几次或者上传到服务器上就好了。
+
+Q：博主 Jacman Demo 站点中文章的 md 源文件在哪能看到呢？
+
+    我将 Demo 站点所有源文件放在了 Jacman 的 site 分支下。
+</code></pre><p>PS:有任何关于 Hexo 的问题，欢迎来 Hexo 中文社区 咨询。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/03/13/newthemes/" data-id="cj07xiaqm000330j7el7a6wgv" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/13/installAtom/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">安装Atom编辑器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/13/newthemes/">newthemes</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/13/installAtom/">安装Atom编辑器</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/13/hexo/">利用Git和Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/13/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Kaven<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
