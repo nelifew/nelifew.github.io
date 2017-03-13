@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>目之所及</title>
+  <title>利用Git和Hexo搭建博客 | 目之所及</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 利用Git和Hexo搭建博客date: 2017-03-13 10:29:59tags:技术
-安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要">
+  <meta name="description" content="date: 2017-03-13 10:29:59tags:技术
+安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要先安装nodejs    sudo npm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="目之所及">
+<meta property="og:title" content="利用Git和Hexo搭建博客">
 <meta property="og:url" content="http://yoursite.com/2017/03/13/hexo/index.html">
 <meta property="og:site_name" content="目之所及">
-<meta property="og:description" content="title: 利用Git和Hexo搭建博客date: 2017-03-13 10:29:59tags:技术
-安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要">
-<meta property="og:updated_time" content="2017-03-13T07:05:35.494Z">
+<meta property="og:description" content="date: 2017-03-13 10:29:59tags:技术
+安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要先安装nodejs    sudo npm">
+<meta property="og:updated_time" content="2017-03-13T07:07:53.578Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="目之所及">
-<meta name="twitter:description" content="title: 利用Git和Hexo搭建博客date: 2017-03-13 10:29:59tags:技术
-安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要">
+<meta name="twitter:title" content="利用Git和Hexo搭建博客">
+<meta name="twitter:description" content="date: 2017-03-13 10:29:59tags:技术
+安装及新建 hexo官方推荐安装方法：    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要先安装nodejs    sudo npm">
   
     <link rel="alternate" href="/atom.xml" title="目之所及" type="application/atom+xml">
   
@@ -69,17 +69,26 @@
         <section id="main"><article id="post-hexo" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/13/hexo/" class="article-date">
-  <time datetime="2017-03-13T07:05:35.550Z" itemprop="datePublished">2017-03-13</time>
+  <time datetime="2017-03-13T07:07:53.638Z" itemprop="datePublished">2017-03-13</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      利用Git和Hexo搭建博客
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: 利用Git和Hexo搭建博客<br>date: 2017-03-13 10:29:59<br>tags:技术</p>
+        <p>date: 2017-03-13 10:29:59<br>tags:技术</p>
 <h1 id="安装及新建-hexo"><a href="#安装及新建-hexo" class="headerlink" title="安装及新建 hexo"></a>安装及新建 hexo</h1><p>官方推荐安装方法：<br>    curl -sL <a href="https://deb.nodesource.com/setup_6.x" target="_blank" rel="external">https://deb.nodesource.com/setup_6.x</a> | sudo -E bash -<br>    sudo apt-get install -y nodejs //因为hexo是基于nodejs的应用，所以需要先安装nodejs<br>    sudo npm install hexo-cli -g  //安装hexo<br>    hexo init “listname”  //新建博客目录<br>    cd listname  //进入博客工作目录<br>    npm install //安装npm<br>    hexo server //开启本地hexo服务，预览当前博客<br><a id="more"></a><br>注：<br>    _config.yml是配置文件，<br>例：<br>    title: 目之所及        //标题<br>    subtitle: 技术学习    //副标题<br>    description:<br>    author: kaven        //作者<br>    language: zh-CN<br>public是hexo生成的静态站点文件夹，<br>scaffolds是模板文件夹，<br>source是存在用户资源的文件夹，<br>themes是主题文件夹。</p>
 <pre><code>hexo new &quot;文章标题&quot;    //新建文章，生成位置：sources/_posts 编辑该文件创作博客
 </code></pre><h2 id="注册安装-github"><a href="#注册安装-github" class="headerlink" title="注册安装 github"></a>注册安装 github</h2><pre><code>makdir ~/hello-world    //创建一个项目hello-world
@@ -101,12 +110,11 @@ ssh-keygen -t rsa -C &quot;your@email.com&quot;  //填写设置的邮箱地址
 <h5 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h5><p>在域名管理中添加 </p>
 <p>A   www     192.30.252.153</p>
 <p>A   @         192.30.252.154<br>在git项目根目录新建CNAME文件<br>www.muzhisuoji.com</p>
-<hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/13/hexo/" data-id="cj07rm1640001vej7i9eyrnlj" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/03/13/hexo/" data-id="cj07rmmul0001w7j7xx5fn3ph" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -155,7 +163,7 @@ ssh-keygen -t rsa -C &quot;your@email.com&quot;  //填写设置的邮箱地址
       <ul>
         
           <li>
-            <a href="/2017/03/13/hexo/">(no title)</a>
+            <a href="/2017/03/13/hexo/">利用Git和Hexo搭建博客</a>
           </li>
         
           <li>
